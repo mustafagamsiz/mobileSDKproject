@@ -1,1 +1,3 @@
-include ':app', ':mobilesdk'
+include ':app', ':mobilesdk', ':WebRTC', ':AppRTC'
+project(':WebRTC').projectDir = new File('webRTCsupport/WebRTC')
+project(':AppRTC').projectDir = new File('webRTCsupport/AppRTC')
