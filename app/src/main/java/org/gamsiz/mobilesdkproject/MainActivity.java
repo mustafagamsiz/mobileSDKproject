@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new MobileSDKCall().establishCall();
+        MobileSDKCall mobileSDKCall = new MobileSDKCall();
+        mobileSDKCall.establishCall();
+
+        mobileSDKCall.endCall();
     }
 }

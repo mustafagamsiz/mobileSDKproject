@@ -17,6 +17,11 @@ public class MobileSDKCall {
 
     public void establishCall() {
         webRTCCall.establishCall();
-        Log.i("MobileSDKCall v1", "MobileSDKCall-v1 established");
+        Log.i("MobileSDKCall v2", "MobileSDKCall-v2 established");
+    }
+
+    public void endCall() {
+        webRTCCall.endCall();
+        Log.i("MobileSDKCall v2", "MobileSDKCall-v2 ended");
     }
 }
